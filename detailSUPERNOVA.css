@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    background-color: rgb(237, 218, 255);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right bottom, rgb(184, 124, 212), rgb(117, 117, 202));
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+ul li a.active {
+    color: rgb(103, 85, 146);
+}
+
+.willify {
+    text-decoration: none;
+    font-size: 35px;
+    font-family: fantasy;
+    letter-spacing: 0.2em;
+    margin-left: 20px;
+}
+
+ul {
+    font-family: fantasy;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+a:hover{
+    color: rgb(73, 57, 88);
+}
+
+.backbutton button {
+    background: none;
+    color: white;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    color: black;
+}
+
+.cover{
+    flex: 0 0 300px;
+    margin-right: 20px;
+    padding-left: 50px;
+}
+
+.cover img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    flex: 0 0 auto;
+    max-width: calc(100% - 320px);
+}
+
+.desc h1{
+    color: rgb(105, 82, 126);
+    font-weight: bold;
+}
+
+.desc h2{
+    color: rgb(145, 118, 171);
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding-top: 40px;
+}
+
+.tombol{
+    font-size: 22px;
+    line-height: 40px;
+    padding: 10px 25px;
+    min-width: 150px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right bottom, rgb(184, 124, 212), rgb(117, 117, 202));
+    border: 0px;
+    height: 60px;
+    border-radius: 5%;
+    margin: 0 10px; /* Adjusted margin */
+}
+
+.lyrics-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 300px);
+}
+
+.lyrics{
+    background-color: rgb(93, 77, 107);
+    color: white;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.textdetail h2{
+    margin: 0;
+    padding: 0;
+}
+
+.lirik{
+    text-align: center;
+    white-space: pre-wrap;
+    padding-right: 70px;
+}
+
+.footer{
+    font-family: sans-serif;
+    background-color: rgb(97, 71, 122);
+    height: auto;
+    padding-top: 30px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 12px;
+}

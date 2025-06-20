@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    background-color: rgb(237, 218, 255);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right bottom, rgb(184, 124, 212), rgb(117, 117, 202));
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+ul li a.active{
+    color: rgb(103, 85, 146);
+}
+
+.textdetail{
+    display: flex;
+    justify-content: center;
+    color: rgb(91, 73, 107);
+}
+
+.box{
+    padding-top: 50px;
+}
+
+.song{
+    padding: 10px;
+}
+
+.willify {
+    text-decoration: none;
+    font-size: 35px;
+    font-family: fantasy;
+    letter-spacing: 0.2em;
+    margin-left: 20px;
+}
+
+ul {
+    font-family: fantasy;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+a:hover {
+    color: rgb(73, 57, 88);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.textdetail {
+    margin-bottom: 20px;
+}
+
+.container .songartist {
+    color: rgb(88, 55, 121);
+}
+
+.container .songcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+.container .songcontainer .song{
+    text-align: center;
+    background-color: aliceblue;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    outline: 0.1rem solid rgb(255, 255, 255);
+    outline-offset: -1.5px;
+    cursor: pointer;
+}
+
+.container .songcontainer .song:hover{
+    outline: .2rem solid rgb(138, 110, 187);
+    outline-offset: 0;
+    transform: scale(1.05);
+}
+
+.container .songcontainer .song img{
+    width: 250px;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+
+a.songdetail{
+    text-decoration: none;
+    color: black;
+}
+a.songdetail:hover{
+    color: rgb(194, 129, 255);
+}
+
+.footer{
+    font-family: sans-serif;
+    background-color: rgb(97, 71, 122);
+    height: auto;
+    padding-top: 30px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 12px;
+}
+
